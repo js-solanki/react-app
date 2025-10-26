@@ -6,12 +6,10 @@ import AppContent from './component/appContent';
 
 function App() {
   return (
-
     <div>
       <AppProvider>
         <AppContent />
       </AppProvider>
-
     </div>
   );
 }

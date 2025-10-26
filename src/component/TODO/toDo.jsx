@@ -2,7 +2,7 @@
 import { useContext, useState } from 'react';
 import AddTask from './addTask';
 import TaskList from './taskList';
-import { AppContext } from '../AppContext';
+import { AppContext } from '../../AppContext';
 
 function ToDo() {
   const [toDo, setToDo] = useState([
@@ -11,7 +11,7 @@ function ToDo() {
     { id: 3, text: 'Learn State', isComplete: false }
   ])
 
-  const { loading, setLoading } = useContext(AppContext);
+  const { setLoading } = useContext(AppContext);
   const [task, setTask] = useState('');
 
   const completedCount = function (isComplete = true) {
